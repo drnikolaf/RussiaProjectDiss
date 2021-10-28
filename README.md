@@ -80,9 +80,6 @@ ctry <- match(wvs$country, unc)
 form <- as.formula("~ trust + age + gender + educ + income + net")
 X <- model.matrix(form, data=wvs)
 
-# cat(dump.format(list(
-#   N = nrow(X), Nc = length(unique(tmp$country)), g0 = c(0,0), G0 = diag(2)*.1,
-#   country=ctry, X=X, y = tmp$dem, cpi=ag.cpi[,2], Tau = diag(3)*.1)), file="nf.dat")
 
 dat.list <- list(
   N = nrow(X), Nc = length(unique(wvs$country)), g0 = c(0,0), G0 = diag(2)*.1,
