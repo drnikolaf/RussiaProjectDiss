@@ -1,5 +1,5 @@
 # RussiaProjectDiss
-Co-authored work 
+
 
 library(car)
 library(coda)
